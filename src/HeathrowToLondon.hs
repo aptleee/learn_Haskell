@@ -1,5 +1,5 @@
--- opt[A][i] = min(opt[B][i-1]+c[i-1]+A[i], opt[A]+A[i])
--- opt[B][i] = min(opt[A][i-1]+c[i-1]+B[i], opt[B]+B[i])
+-- opt[A][i] = min(opt[B][i-1]+c[i-1]+A[i], opt[A][i-1]+A[i])
+-- opt[B][i] = min(opt[A][i-1]+c[i-1]+B[i], opt[B][i-1]+B[i])
 -- max(opt[A][n], opt[B][n])
 
 data Node = Node Road (Maybe Road)
